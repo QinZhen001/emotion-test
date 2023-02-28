@@ -1,6 +1,5 @@
-import protoRoot from "../proto/proto.js";
 // import { css } from '@emotion/css'
-import { css } from '@emotion/react'
+
 
 import { useEffect } from "react";
 
@@ -47,43 +46,13 @@ const test = () => {
 // test()
 
 const Test = () => {
-  //   return <div
-  //     className={css`
-  //   padding: 32px;
-  //   background-color: hotpink;
-  //   font-size: 24px;
-  //   border-radius: 4px;
-  //   color: red;
-  //   &:hover {
-  //     color: ${color};
-  //   }
-  // `}
-  //   >
-  //     <h1>Test</h1>
-  //   </div>
-
-  // return <div css={
-  //   css`
-  //   padding: 32px;
-  //   background-color: hotpink;
-  //   font-size: 24px;
-  //   border-radius: 4px;
-  //   color: red;
-  //   &:hover {
-  //     color: ${color};
-  //   }`
-  // }>
-  //   <h1>Test 1111</h1>
-  // </div>
 
 
 
-  return <div css={{
-    padding: "32px",
-    backgroundColor: 'hotpink',
-  }}>
-    <h1>Test 1111</h1>
-  </div >
+
+
+
+
 }
 
 

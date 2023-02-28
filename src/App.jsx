@@ -1,12 +1,13 @@
-import { useState } from 'react'
-import Test from './components/Test'
+import EmotionCss from './components/EmotionCss'
+import EmotionReact from './components/EmotionReact'
 import './App.css'
 
 function App() {
 
   return (
     <div className="App">
-      <Test></Test>
+      <EmotionCss></EmotionCss>
+      <EmotionReact></EmotionReact>
     </div>
   )
 }
