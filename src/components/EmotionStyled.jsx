@@ -1,9 +1,8 @@
-import styled from '@emotion/styled'
-
+import styled from "@emotion/styled";
 
 const EmotionStyled = () => {
 
-  const Test = styled.div`
+  const Test = styled('div')`
     padding: 32px;
     background-color: hotpink;
     font-size: 24px;

@@ -1,13 +1,26 @@
-// TODO: props contains the `className` prop
+// if you use @emotion/styled.macro with babel-plugin-macros or the babel plugin, 
+// styled.div will be replaced with styled('div') and @emotion/styled-base will be imported instead which doesn't include the tag list.
+import styled from "@emotion/styled";
 
-// 传一个css对象给组件试试
-// props 里面会有什么
 
-// const SmallArticleText = props => (
-//   <ArticleText
-//     css={{
-//       fontSize: 10
-//     }}
-//     {...props} // <- props contains the `className` prop
-//   />
-// )
+const PropCss = (props) => {
+  const { className } = props
+
+  const Basic =
+    ({ className }) => <div className={className}>Some text</div>
+
+  const Fancy = styled(Basic)`
+  color: hotpink;
+`
+
+
+  return <div className={className}>
+    PropCss
+    <Fancy></Fancy>
+  </div>
+
+}
+
+
+
+export default PropCss
