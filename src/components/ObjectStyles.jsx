@@ -1,6 +1,6 @@
 // https://emotion.sh/docs/babel-macros
 import styled from "@emotion/styled";
-
+import { boxCss } from "../css/index"
 
 const ObjectStyles = () => {
 
@@ -16,7 +16,8 @@ const ObjectStyles = () => {
     }
   })
 
-  return <div>
+  return <div css={boxCss}>
+    ObjectStyles
     <Parent>
       <Child>blue</Child>
     </Parent>
