@@ -12,12 +12,14 @@ import Theme from './components/Theme'
 import AttachingProps from './components/AttachingProps'
 
 import './App.css'
+import { useEffect } from "react"
 
 const bgBlack = css({
   backgroundColor: "black"
 })
 
 function App() {
+
 
   return (
     <div className="App">
